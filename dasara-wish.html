@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Dasara ✨ | Divya_acharya</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--night:#1a0513;--plum:#3a0a24;--maroon:#6b1433;--gold:#f0c35a;--marigold:#f59a1c;--cream:#fff2d2;--rose:#c2334d;
+--display:'Cinzel Decorative',Georgia,serif;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Poppins',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;height:100%}
+body{background:var(--night);color:var(--cream);font-family:var(--sans);overflow-x:hidden;min-height:100%}
+#root{position:relative;min-height:100vh;background:radial-gradient(ellipse at 50% 30%,#7a1838 0%,var(--plum) 48%,var(--night) 100%)}
+.page{position:relative;z-index:2;max-width:720px;margin:0 auto;padding:26px 20px 40px;text-align:center}
+.frame{position:fixed;inset:10px;z-index:4;pointer-events:none;border:1px solid rgba(240,195,90,.6);border-radius:6px}
+.frame::before{content:"";position:absolute;inset:5px;border:2px dotted rgba(240,195,90,.45);border-radius:4px}
+
+/* toran */
+.toran{display:flex;justify-content:center;gap:2px;height:48px;overflow:hidden}
+.toran span{width:21px;height:21px;border-radius:50%;flex:none;background:radial-gradient(circle at 35% 35%,#ffd36b,var(--marigold) 55%,#c25a00);box-shadow:0 0 8px rgba(245,154,28,.6);animation:sway 4s ease-in-out infinite}
+.toran span:nth-child(3n){background:radial-gradient(circle at 35% 35%,#ff9aa8,var(--rose) 60%,#7a1030)}
+.toran span:nth-child(even){margin-top:15px}
+@keyframes sway{50%{transform:translateY(5px)}}
+
+/* headings */
+h1{font-family:var(--display);font-weight:900;font-size:clamp(2.1rem,9vw,4rem);line-height:1.15;margin:12px 0 4px;
+background:linear-gradient(100deg,#b8862b 10%,#fff0b0 35%,#f0c35a 50%,#fff0b0 65%,#b8862b 90%);background-size:220% 100%;
+-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite;filter:drop-shadow(0 0 14px rgba(240,195,90,.45))}
+@keyframes shine{to{background-position:-220% 0}}
+.sub{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--gold)}
+.rise{opacity:0;transform:translateY(22px) scale(.94);animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+
+/* elephant */
+.ele{display:block;width:min(86%,400px);margin:0 auto;filter:drop-shadow(0 0 26px rgba(240,195,90,.35));animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.trunk{transform-origin:328px 150px;animation:trunk 3.2s ease-in-out infinite}
+@keyframes trunk{50%{transform:rotate(-5deg)}}
+.ear{transform-origin:292px 100px;animation:ear 2.4s ease-in-out infinite}
+@keyframes ear{50%{transform:rotate(-7deg)}}
+.flag{transform-origin:200px 16px;animation:flag 1.6s ease-in-out infinite}
+@keyframes flag{50%{transform:skewY(-8deg)}}
+.bulb{animation:tw 2.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.3}50%{opacity:1}}
+
+/* card */
+.card{position:relative;margin:18px auto 0;padding:30px 22px;max-width:540px;border-radius:18px;background:linear-gradient(160deg,rgba(107,20,51,.75),rgba(26,5,19,.78));backdrop-filter:blur(6px);border:1px solid rgba(240,195,90,.5);box-shadow:0 0 40px rgba(240,195,90,.18)}
+.card::before{content:"";position:absolute;inset:6px;border:1px dashed rgba(240,195,90,.35);border-radius:13px;pointer-events:none}
+.card p{font-family:var(--serif);font-size:clamp(1.2rem,4.6vw,1.5rem);line-height:1.55;margin-bottom:.8em}
+.card p:last-child{margin:0}
+.card .lead{font-size:clamp(1.3rem,5vw,1.65rem);color:var(--gold)}
+.rangoli{width:84px;height:84px;margin:-68px auto 10px;display:block;animation:spin 40s linear infinite;filter:drop-shadow(0 0 8px rgba(240,195,90,.6))}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* buttons */
+button{font-family:var(--sans);cursor:pointer;border:0;transition:transform .25s,box-shadow .25s,background .25s}
+.cta{position:relative;overflow:hidden;padding:15px 34px;border-radius:40px;font-weight:500;font-size:1.02rem;color:#3a0a24;background:linear-gradient(135deg,#ffe28a,var(--gold) 50%,#d99a2b);box-shadow:0 6px 24px rgba(240,195,90,.4)}
+.cta::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);transition:left .6s}
+.cta:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 10px 34px rgba(240,195,90,.65)}
+.cta:hover::after{left:130%}
+.cta:active{transform:scale(.97)}
+.pulse{animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 6px 24px rgba(240,195,90,.4)}50%{box-shadow:0 0 0 12px rgba(240,195,90,.12),0 6px 34px rgba(240,195,90,.7)}}
+.mute{position:fixed;top:calc(22px + env(safe-area-inset-top,0px));right:22px;z-index:9;width:46px;height:46px;border-radius:50%;font-size:1.15rem;color:var(--gold);background:rgba(58,10,36,.85);border:1px solid var(--gold)}
+.mute:hover{transform:rotate(12deg) scale(1.08)}
+button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.actions{margin:26px 0 8px}
+.toast{font-family:var(--display);color:var(--gold);min-height:2em;font-size:1rem;opacity:0;transition:opacity .6s}
+.toast.on{opacity:1}
+footer{margin-top:30px;font-weight:300;font-size:.92rem;color:#f3dba0;line-height:1.9}
+footer::before{content:"❖ ❖ ❖";display:block;color:var(--gold);letter-spacing:.6em;margin-bottom:10px;font-size:.8rem}
+footer b{font-weight:500;color:var(--gold)}
+
+/* gate */
+.gate{position:fixed;inset:0;z-index:8}
+.gate.done{pointer-events:none}
+.door{position:absolute;top:0;bottom:0;width:50.2%;transition:transform 1.3s cubic-bezier(.7,0,.2,1);
+background:radial-gradient(circle at 50% 50%,rgba(240,195,90,.12) 0 2px,transparent 3px) 0 0/28px 28px,linear-gradient(180deg,#5a0f2a,#2a0718);border:3px solid var(--gold)}
+.door.l{left:0;border-right-width:1px}.door.r{right:0;border-left-width:1px}
+.gate.open .l{transform:translateX(-101%)}.gate.open .r{transform:translateX(101%)}
+.gate-in{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;text-align:center;transition:opacity .5s,transform .6s}
+.gate.open .gate-in{opacity:0;transform:scale(1.15)}
+.gate-in .ele{width:min(88%,420px)}
+.gate-in h2{font-family:var(--display);font-size:clamp(1.6rem,7vw,2.6rem);color:var(--gold);text-shadow:0 0 18px rgba(240,195,90,.6)}
+.gate-in p{font-family:var(--serif);font-style:italic;font-size:1.25rem;color:var(--cream);margin-bottom:8px}
+
+/* fx */
+.fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.petal{position:absolute;top:-30px;border-radius:70% 0 70% 0;animation:fall linear infinite;opacity:.9}
+@keyframes fall{0%{transform:translate3d(0,-30px,0) rotate(0)}50%{transform:translate3d(40px,55vh,0) rotate(200deg)}100%{transform:translate3d(-30px,112vh,0) rotate(420deg)}}
+.spark{position:absolute;width:6px;height:6px;background:#fff6c8;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:sp 3s ease-in-out infinite;opacity:0}
+@keyframes sp{0%,100%{opacity:0;transform:scale(.3) rotate(0)}50%{opacity:1;transform:scale(1.6) rotate(90deg)}}
+canvas.burst{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:7}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.petal,.spark{display:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+<script type="text/babel">
+const { useState, useEffect, useRef, useMemo, useCallback } = React;
+const rand = (a, b) => a + Math.random() * (b - a);
+
+function Petals() {
+  const items = useMemo(() => Array.from({ length: 20 }, (_, i) => ({
+    i, left: rand(0, 100), s: rand(10, 20), d: rand(9, 18), delay: -rand(0, 18),
+    c: ['#f59a1c', '#ffb739', '#c2334d', '#ff8a5c', '#ffd36b'][i % 5] })), []);
+  return <div className="fx" aria-hidden="true">{items.map(p =>
+    <span key={p.i} className="petal" style={{ left: p.left + '%', width: p.s, height: p.s * 1.25, background: p.c, animationDuration: p.d + 's', animationDelay: p.delay + 's' }} />)}</div>;
+}
+function Sparkles() {
+  const items = useMemo(() => Array.from({ length: 24 }, (_, i) => ({ i, x: rand(2, 98), y: rand(2, 98), d: rand(2.5, 5), delay: -rand(0, 5) })), []);
+  return <div className="fx" aria-hidden="true">{items.map(s =>
+    <span key={s.i} className="spark" style={{ left: s.x + '%', top: s.y + '%', animationDuration: s.d + 's', animationDelay: s.delay + 's' }} />)}</div>;
+}
+
+/* Caparisoned Mysuru Dasara elephant with golden howdah */
+function Elephant({ id }) {
+  const bulbs = [];
+  for (let x = 128; x <= 280; x += 14) bulbs.push([x, 200]);
+  for (let a = 200; a <= 340; a += 20) bulbs.push([200 + 52 * Math.cos(a * Math.PI / 180), 88 + 50 * Math.sin(a * Math.PI / 180)]);
+  return (
+    <svg className="ele" viewBox="0 0 420 290" role="img" aria-label="Decorated Mysuru Dasara elephant carrying the golden howdah">
+      <defs>
+        <linearGradient id={'g' + id} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#ffe28a" /><stop offset="1" stopColor="#b8862b" /></linearGradient>
+        <linearGradient id={'s' + id} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#8a7f86" /><stop offset="1" stopColor="#4d4149" /></linearGradient>
+      </defs>
+      {/* back legs + front legs */}
+      <g fill={`url(#s${id})`}>
+        <rect x="112" y="190" width="38" height="78" rx="14" /><rect x="242" y="190" width="38" height="78" rx="14" />
+        <rect x="150" y="196" width="38" height="72" rx="14" opacity=".85" /><rect x="276" y="196" width="38" height="72" rx="14" opacity=".85" />
+      </g>
+      <g fill="#f0c35a">{[124, 162, 254, 288].map(x => <rect key={x} x={x - 2} y="252" width="30" height="7" rx="3" />)}</g>
+      {/* body */}
+      <ellipse cx="205" cy="150" rx="112" ry="66" fill={`url(#s${id})`} />
+      {/* head + ear + trunk */}
+      <ellipse cx="320" cy="122" rx="52" ry="58" fill={`url(#s${id})`} />
+      <g className="trunk"><path d="M336 150 C362 172 364 222 354 252 C350 266 372 270 374 256" fill="none" stroke="#6f636b" strokeWidth="30" strokeLinecap="round" />
+        <path d="M336 160 C356 178 357 222 350 250" fill="none" stroke="#f0c35a" strokeWidth="3" strokeDasharray="1 11" strokeLinecap="round" /></g>
+      <path d="M346 178 C366 182 384 190 392 206" fill="none" stroke="#fff6dc" strokeWidth="9" strokeLinecap="round" />
+      <path d="M389 203 l6 3" stroke="#f0c35a" strokeWidth="8" strokeLinecap="round" />
+      <g className="ear"><ellipse cx="288" cy="128" rx="25" ry="42" fill="#5d515a" stroke="#f0c35a" strokeWidth="2" /></g>
+      <circle cx="338" cy="108" r="4.5" fill="#1a0513" /><circle cx="339.5" cy="106.5" r="1.4" fill="#fff" />
+      {/* forehead ornament */}
+      <path d="M292 82 Q326 62 352 96 L340 138 L308 128Z" fill="#c2334d" stroke={`url(#g${id})`} strokeWidth="3" />
+      <path d="M305 92 Q326 80 342 100 L334 126 L314 120Z" fill="none" stroke="#f0c35a" strokeWidth="1.6" />
+      <circle cx="324" cy="104" r="6" fill="#f0c35a" /><circle cx="324" cy="104" r="2.6" fill="#c2334d" />
+      {/* decorated cloth */}
+      <path d="M118 104 Q205 82 290 100 L290 196 Q270 210 252 196 Q234 210 216 196 Q198 210 180 196 Q162 210 144 196 Q128 208 118 196Z" fill="#c2334d" stroke={`url(#g${id})`} strokeWidth="4" />
+      <path d="M130 120 Q205 102 278 116" fill="none" stroke="#f0c35a" strokeWidth="2" strokeDasharray="3 5" />
+      <g fill="#f0c35a">{[130, 160, 190, 220, 250].map((x, i) => <circle key={x} cx={x + 6} cy={188 - (i % 2) * 2} r="3.2" />)}</g>
+      <g transform="translate(205 152)" stroke="#f0c35a" strokeWidth="1.6" fill="#8e1b3a">{[0, 60, 120, 180, 240, 300].map(a =>
+        <ellipse key={a} cx="0" cy="-14" rx="6" ry="13" transform={`rotate(${a})`} />)}<circle r="6" fill="#f0c35a" /></g>
+      {/* neck garland */}
+      <path d="M284 118 Q300 170 334 158" fill="none" stroke="#f59a1c" strokeWidth="7" strokeDasharray="1 9" strokeLinecap="round" />
+      {/* howdah (Ambari) */}
+      <g>
+        <rect x="136" y="92" width="136" height="12" rx="3" fill={`url(#g${id})`} />
+        <g fill="#7a1838" stroke="#f0c35a" strokeWidth="1.5"><rect x="150" y="62" width="108" height="30" /></g>
+        <g fill="#1a0513" stroke="#f0c35a" strokeWidth="1.2">{[164, 192, 220].map(x => <path key={x} d={`M${x} 92 v-16 a9 9 0 0 1 18 0 v16Z`} />)}</g>
+        <path d="M140 66 L204 26 L268 66Z" fill={`url(#g${id})`} stroke="#8a5a10" strokeWidth="1.5" />
+        <path d="M168 60 Q204 34 240 60" fill="none" stroke="#7a1838" strokeWidth="2" />
+        <circle cx="204" cy="22" r="5" fill="#f0c35a" /><path d="M204 18 V6" stroke="#f0c35a" strokeWidth="2" />
+        <path className="flag" d="M204 6 L226 11 L204 16Z" fill="#f59a1c" />
+      </g>
+      {bulbs.map(([x, y], i) => <circle key={i} className="bulb" cx={x} cy={y} r="2.2" fill="#ffe9a0" style={{ animationDelay: (-(i % 8) * .3) + 's' }} />)}
+    </svg>
+  );
+}
+
+function Palace() {
+  return (
+    <svg viewBox="0 0 640 120" style={{ width: '100%', maxWidth: 520, display: 'block', margin: '4px auto 0', filter: 'drop-shadow(0 0 16px rgba(240,195,90,.3))' }} aria-hidden="true">
+      <g fill="#4a0c24" stroke="#f0c35a" strokeWidth="1.2">
+        <rect x="30" y="92" width="580" height="22" /><rect x="150" y="66" width="340" height="28" />
+        <path d="M258 66 V52 a62 62 0 0 1 124 0 V66Z" /><circle cx="320" cy="-2" r="4" fill="#f0c35a" stroke="none" />
+        <path d="M96 84 v-8 a34 34 0 0 1 68 0 v8Z" transform="translate(0 4)" /><path d="M476 84 v-8 a34 34 0 0 1 68 0 v8Z" transform="translate(0 4)" />
+      </g>
+      {Array.from({ length: 30 }, (_, i) => <circle key={i} className="bulb" cx={40 + i * 19.5} cy="92" r="2.2" fill="#ffe9a0" style={{ animationDelay: (-(i % 9) * .27) + 's' }} />)}
+    </svg>
+  );
+}
+
+function Rangoli() {
+  return (
+    <svg className="rangoli" viewBox="-50 -50 100 100" aria-hidden="true">
+      {Array.from({ length: 12 }, (_, i) => i * 30).map(a => (
+        <g key={a} transform={`rotate(${a})`}>
+          <path d="M0 -10 C8 -24 8 -36 0 -46 C-8 -36 -8 -24 0 -10Z" fill={a % 60 ? '#c2334d' : '#f59a1c'} stroke="#ffe28a" strokeWidth=".8" />
+          <circle cy="-47" r="2" fill="#ffe28a" />
+        </g>))}
+      <circle r="11" fill="#3a0a24" stroke="#f0c35a" strokeWidth="1.5" /><circle r="5" fill="#f0c35a" />
+    </svg>
+  );
+}
+
+function Toran() {
+  return <div className="toran" aria-hidden="true">{Array.from({ length: 30 }, (_, i) => <span key={i} style={{ animationDelay: (-i * .2) + 's' }} />)}</div>;
+}
+
+/* soft bell music via Web Audio */
+function useMusic() {
+  const ctxRef = useRef(null), timer = useRef(null);
+  const [on, setOn] = useState(false);
+  const scale = [261.63, 293.66, 329.63, 392, 440, 523.25, 587.33];
+  const note = (ctx, f, t, dur = 2.4, vol = .07) => {
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.frequency.value = f; g.gain.setValueAtTime(0, t);
+    g.gain.linearRampToValueAtTime(vol, t + .03); g.gain.exponentialRampToValueAtTime(.0001, t + dur);
+    o.connect(g); g.connect(ctx.destination); o.start(t); o.stop(t + dur + .1);
+  };
+  const start = useCallback(() => {
+    try {
+      const ctx = ctxRef.current || new (window.AudioContext || window.webkitAudioContext)();
+      ctxRef.current = ctx; ctx.resume();
+      let step = 0; const phrase = [0, 2, 3, 4, 3, 2, 4, 5, 4, 3, 2, 0];
+      const play = () => { const t = ctx.currentTime + .05, f = scale[phrase[step % 12]];
+        note(ctx, f, t); note(ctx, f * 2, t, 1.4, .025); if (step % 4 === 0) note(ctx, 130.81, t, 3.6, .05); step++; };
+      clearInterval(timer.current); play(); timer.current = setInterval(play, 900); setOn(true);
+    } catch (e) {}
+  }, []);
+  const stop = useCallback(() => { clearInterval(timer.current); setOn(false); }, []);
+  useEffect(() => () => clearInterval(timer.current), []);
+  return { on, start, toggle: () => (on ? stop() : start()) };
+}
+
+function Burst({ fire }) {
+  const ref = useRef(null), parts = useRef([]), raf = useRef(0);
+  useEffect(() => {
+    const c = ref.current, resize = () => { c.width = innerWidth * devicePixelRatio; c.height = innerHeight * devicePixelRatio; };
+    resize(); addEventListener('resize', resize);
+    return () => { removeEventListener('resize', resize); cancelAnimationFrame(raf.current); };
+  }, []);
+  useEffect(() => {
+    if (!fire) return;
+    const c = ref.current, ctx = c.getContext('2d'), dpr = devicePixelRatio, cols = ['#ffe28a', '#f0c35a', '#f59a1c', '#c2334d', '#fff6c8'];
+    const shoot = (cx, cy) => { for (let i = 0; i < 70; i++) { const a = rand(0, 6.28), v = rand(2, 8) * dpr;
+      parts.current.push({ x: cx, y: cy, vx: Math.cos(a) * v, vy: Math.sin(a) * v, life: 1, r: rand(1.5, 3.5) * dpr, c: cols[(Math.random() * 5) | 0] }); } };
+    [0, 350, 700, 1100].forEach(d => setTimeout(() => shoot(rand(.2, .8) * c.width, rand(.15, .5) * c.height), d));
+    for (let i = 0; i < 80; i++) parts.current.push({ x: rand(0, c.width), y: rand(-c.height * .5, 0), vx: rand(-1, 1) * dpr, vy: rand(2, 5) * dpr, life: 1.6, r: rand(5, 9) * dpr, c: ['#f59a1c', '#ffb739', '#c2334d'][i % 3], petal: true, rot: rand(0, 6) });
+    cancelAnimationFrame(raf.current);
+    const tick = () => {
+      ctx.clearRect(0, 0, c.width, c.height);
+      parts.current = parts.current.filter(p => p.life > 0);
+      parts.current.forEach(p => {
+        p.x += p.vx; p.y += p.vy; p.life -= p.petal ? .004 : .014;
+        if (!p.petal) { p.vy += .09 * dpr; p.vx *= .985; } else { p.rot += .05; p.x += Math.sin(p.rot) * 1.2; }
+        ctx.globalAlpha = Math.max(0, Math.min(1, p.life)); ctx.fillStyle = p.c; ctx.shadowColor = p.c; ctx.shadowBlur = p.petal ? 0 : 12;
+        ctx.beginPath(); p.petal ? ctx.ellipse(p.x, p.y, p.r, p.r * .6, p.rot, 0, 7) : ctx.arc(p.x, p.y, p.r, 0, 7); ctx.fill();
+      });
+      if (parts.current.length) raf.current = requestAnimationFrame(tick); else ctx.clearRect(0, 0, c.width, c.height);
+    };
+    tick();
+  }, [fire]);
+  return <canvas ref={ref} className="burst" aria-hidden="true" />;
+}
+
+function App() {
+  const music = useMusic();
+  const [open, setOpen] = useState(false);
+  const [gone, setGone] = useState(false);
+  const [fire, setFire] = useState(0);
+  const [msg, setMsg] = useState('');
+
+  const reveal = () => {
+    setOpen(true); music.start();
+    setTimeout(() => setFire(f => f + 1), 600);
+    setTimeout(() => setGone(true), 1600);
+  };
+  const celebrate = () => {
+    setFire(f => f + 1); setMsg('ಶುಭ ದಸರಾ • Shubha Dasara! ✨');
+    if (!music.on) music.start();
+    setTimeout(() => setMsg(''), 4500);
+  };
+
+  return (
+    <>
+      <Petals /><Sparkles /><Burst fire={fire} />
+      <div className="frame" aria-hidden="true" />
+      {open && <button className="mute" onClick={music.toggle} aria-label={music.on ? 'Mute music' : 'Play music'}>{music.on ? '🔊' : '🔇'}</button>}
+
+      {!gone && (
+        <div className={'gate' + (open ? ' open' : '')}>
+          <div className="door l" /><div className="door r" />
+          <div className="gate-in">
+            <Toran />
+            <Elephant id="a" />
+            <h2>ದಸರಾ ಹಬ್ಬ</h2>
+            <p>A Mysuru Dasara wish is waiting for you</p>
+            <button className="cta pulse" onClick={reveal}>Click here to see the wish ✨</button>
+          </div>
+        </div>
+      )}
+
+      <main className="page">
+        <Toran />
+        <Palace />
+        <h1 className={open ? 'rise' : ''} style={{ animationDelay: '1s' }}>✨ Happy Dasara ✨</h1>
+        <p className={'sub ' + (open ? 'rise' : '')} style={{ animationDelay: '1.4s' }}>Jamboo Savari • Mysuru Dasara</p>
+        <div className={open ? 'rise' : ''} style={{ animationDelay: '1.7s', opacity: open ? undefined : 0 }}>
+          <div style={{ height: 14 }} />
+          <Elephant id="b" />
+          <section className="card">
+            <Rangoli />
+            <p className="lead">✨ May this Dasara fill your life with happiness, positivity, prosperity, and countless beautiful moments. Happy Dasara! 🐘</p>
+            <p>Celebrate the victory of good over evil with joy and togetherness. 🌸✨</p>
+          </section>
+          <div className="actions"><button className="cta" onClick={celebrate}>Celebrate Dasara ✨</button></div>
+          <div className={'toast' + (msg ? ' on' : '')} role="status">{msg || '\u00a0'}</div>
+          <footer>
+            <div>Made with ❤️ and festive vibes by <b>Divya_acharya</b></div>
+          </footer>
+        </div>
+      </main>
+    </>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
